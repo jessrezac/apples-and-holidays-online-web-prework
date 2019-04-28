@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holiday.split(/_/)
       holiday.collect { |w| w.capitalize! }
       holiday = holiday.join(' ')
-      supplies = supplies.join(',')
+      supplies = supplies.join(', ')
       puts "  #{holiday}: #{supplies}"
     end
   end
